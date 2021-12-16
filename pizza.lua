@@ -143,7 +143,7 @@ function addToPlayer(plr)
         TextLabel6.TextSize = 14
         TextLabel6.TextWrap = true
         TextLabel6.TextWrapped = true
-        TextLabel7.Text = "Player: "..(plr.Name) .. (game.Workspace:WaitForChild("Livingthings"):WaitForChild(plr.Name).Clan.Value)
+        TextLabel7.Text = "Player: "..(plr.Name) .. (game.Workspace:WaitForChild("LivingThings"):WaitForChild(plr.Name).Clan.Value)
         TextLabel7.Parent = SuggestedParent
         TextLabel7.Position = UDim2.new(0.0299999993, 0, 0, 0)
         TextLabel7.Size = UDim2.new(0.930000007, 0, 0.150000006, 0)
@@ -191,20 +191,13 @@ end
 for _,v in pairs(Players:GetChildren()) do
     main(v)
 end
+local Enabled = false
 Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key:lower() == "l" then
+            Enabled = not Enabled
 for _,v in pairs(guishit) do
 if v.Name =="hover" then
-v.Enabled = true
-end
-end
-end
-end)
-Players.LocalPlayer:GetMouse().KeyUp:Connect(function(key)
-if key:lower() == "l" then
-for _,v in pairs(guishit) do
-if v.Name =="hover" then
-v.Enabled = false
+v.Enabled = Enabled
 end
 end
 end
