@@ -163,7 +163,7 @@ function addToPlayer(plr)
         value.Name = "BillboardGui0"
         hover.Name = "hover"
         value.Value = BillboardGui0
-        
+        Frame1.Visible = false
         Frame1.MouseEnter:Connect(function()
             hover.Enabled = true
             BillboardGui0.Enabled = not hover.Enabled
