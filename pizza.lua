@@ -107,25 +107,7 @@ function addToPlayer(plr)
         Frame1.BorderSizePixel = 0
         Frame1.BackgroundTransparency = .7
         
-        --[[Frame2.Parent = BillboardGui0
-        Frame2.Position = UDim2.new(0, 0, 1, 0)
-        Frame2.Size = UDim2.new(1, 0, 0.0199999996, 0)
-        Frame2.AnchorPoint = Vector2.new(0, 1)
-        Frame2.BackgroundColor = BrickColor.new("Really red")
-        Frame2.BackgroundColor3 = Color3.new(1, 0, 0)
-        Frame2.BorderSizePixel = 0
-        Frame3.Parent = BillboardGui0
-        Frame3.Size = UDim2.new(0.0299999993, 0, 1, 0)
-        Frame3.BackgroundColor = BrickColor.new("Really red")
-        Frame3.BackgroundColor3 = Color3.new(1, 0, 0)
-        Frame3.BorderSizePixel = 0
-        Frame4.Parent = BillboardGui0
-        Frame4.Position = UDim2.new(1, 0, 0, 0)
-        Frame4.Size = UDim2.new(0.0299999993, 0, 1, 0)
-        Frame4.AnchorPoint = Vector2.new(1, 0)
-        Frame4.BackgroundColor = BrickColor.new("Really red")
-        Frame4.BackgroundColor3 = Color3.new(1, 0, 0)
-        Frame4.BorderSizePixel = 0]]
+        
         TextLabel5.Name = "Rank"
         TextLabel5.Parent = SuggestedParent
         TextLabel5.Position = UDim2.new(0.0299999993, 0, 0.699999988, 0)
