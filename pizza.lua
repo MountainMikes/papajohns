@@ -88,9 +88,9 @@ function addToPlayer(plr)
         --Frame2 = Instance.new("Frame")
         --Frame3 = Instance.new("Frame")
         --Frame4 = Instance.new("Frame")
-        TextLabel5 = Instance.new("TextLabel")
-        TextLabel6 = Instance.new("TextLabel")
-        TextLabel7 = Instance.new("TextLabel")
+        TextLabel5.Visible = false
+        TextLabel6.Visible = false
+        TextLabel7.Visible = false
         BillboardGui0.Parent = game:GetService("CoreGui")
         BillboardGui0.LightInfluence = 1
         BillboardGui0.Size = UDim2.new(4, 0, 6, 0)
@@ -105,7 +105,7 @@ function addToPlayer(plr)
         Frame1.BackgroundColor = BrickColor.new("Really red")
         Frame1.BackgroundColor3 = Color3.new(1, 0, 0)
         Frame1.BorderSizePixel = 0
-        Frame1.BackgroundTransparency = .7
+        Frame1.BackgroundTransparency = 1
         
         
         TextLabel5.Name = "Rank"
