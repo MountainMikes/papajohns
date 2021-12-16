@@ -88,9 +88,9 @@ function addToPlayer(plr)
         --Frame2 = Instance.new("Frame")
         --Frame3 = Instance.new("Frame")
         --Frame4 = Instance.new("Frame")
-        TextLabel5.Visible = false
-        TextLabel6.Visible = false
-        TextLabel7.Visible = false
+        TextLabel5.TextTransparency = 1
+        TextLabel6.TextTransparency = 1
+        TextLabel7.TextTransparency = 1
         BillboardGui0.Parent = game:GetService("CoreGui")
         BillboardGui0.LightInfluence = 1
         BillboardGui0.Size = UDim2.new(4, 0, 6, 0)
