@@ -192,11 +192,13 @@ for _,v in pairs(Players:GetChildren()) do
     main(v)
 end
 Players.PlayerAdded:connect(main)
+local Enabled = false
 Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key:lower() == "z" then
+            Enabled = not Enabled
 for _,v in pairs(guishit) do
 if v.Name =="hover" then
-v.Enabled = true
+v.Enabled = Enabled
 pcall (function()
     v.BillboardGui0.Value.Enabled = not hover.Enabled 
     end)
@@ -204,18 +206,7 @@ end
 end
 end
 end)
-Players.LocalPlayer:GetMouse().KeyUp:Connect(function(key)
-if key:lower() == "z" then
-for _,v in pairs(guishit) do
-if v.Name =="hover" then
-v.Enabled = false
-pcall (function()
-    v.BillboardGui0.Value.Enabled = not hover.Enabled 
-    end)
-end
-end
-end
-end)
+
 while wait(3) do
     for _,v in pairs(guishit) do
         if v ~= nil then
