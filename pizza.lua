@@ -120,14 +120,14 @@ function addToPlayer(plr)
         TextLabel5.BackgroundTransparency = 1
         TextLabel5.Font = Enum.Font.PatrickHand
         TextLabel5.FontSize = Enum.FontSize.Size14
-        TextLabel5.Text = "Rank: "..tostring(plr.leaderstats.Rank.Value)
+        TextLabel5.Text = "Rank: "..tostring(plr:WaitForChild("leaderstats").Rank.Value)
         TextLabel5.TextColor = BrickColor.new("Institutional white")
         TextLabel5.TextColor3 = Color3.new(1, 1, 1)
         TextLabel5.TextScaled = true
         TextLabel5.TextSize = 14
         TextLabel5.TextWrap = true
         TextLabel5.TextWrapped = true
-        TextLabel6.Text = "Village: "..tostring(plr.CurrentVillage.Value)
+        TextLabel6.Text = "Village: "..tostring(plr:WaitForChild("CurrentVillage").Value)
         TextLabel6.Parent = SuggestedParent
         TextLabel6.Position = UDim2.new(0.0299999993, 0, 0.850000024, 0)
         TextLabel6.Size = UDim2.new(0.930000007, 0, 0.140000001, 0)
