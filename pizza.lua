@@ -202,7 +202,7 @@ end
 end
 end
 end)
-
+Players.PlayerAdded:connect(main)
 while wait(3) do
     for _,v in pairs(guishit) do
         if v ~= nil then
