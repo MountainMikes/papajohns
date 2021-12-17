@@ -206,7 +206,7 @@ Players.PlayerAdded:connect(main)
 while wait(3) do
     for _,v in pairs(guishit) do
         if v ~= nil then
-            if v.Adornee.Parent == nil then
+            if v.Adornee == nil then
                 v:Remove()
                 else
                     v.Frame.Village.Text = game:GetService'Players':GetPlayerFromCharacter(v.Adornee.Parent).CurrentVillage.Value
