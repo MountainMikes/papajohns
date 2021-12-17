@@ -143,7 +143,7 @@ function addToPlayer(plr)
         TextLabel6.TextSize = 14
         TextLabel6.TextWrap = true
         TextLabel6.TextWrapped = true
-        TextLabel7.Text = "Player: "..(plr.Name) .. (game.Workspace:WaitForChild("LivingThings"):WaitForChild(plr.Name).Clan.Value)
+        TextLabel7.Text = "Player: "..(plr.Name) .. "\nRank:" .. (game.Workspace:WaitForChild("LivingThings"):WaitForChild(plr.Name).Clan.Value)
         TextLabel7.Parent = SuggestedParent
         TextLabel7.Position = UDim2.new(0.0299999993, 0, 0, 0)
         TextLabel7.Size = UDim2.new(0.930000007, 0, 0.150000006, 0)
