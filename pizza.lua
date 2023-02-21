@@ -193,7 +193,7 @@ for _,v in pairs(Players:GetChildren()) do
 end
 local Enabled = false
 Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
-if key:lower() == "z" then
+if key:lower() == "x" then
             Enabled = not Enabled
 for _,v in pairs(guishit) do
 if v.Name =="hover" then
